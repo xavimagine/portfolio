@@ -12,72 +12,211 @@
     <link rel="icon" href="assest/galery/Ilogo.png">
     <title>Javier Díaz Rayo</title>
 </head>
-<body>
-
-        <div class="container" id="header">
-            <div class="row">
-                <div class="col">
-                    <a href="index.html">
-                        <img src="assest/galery/Ilogo.png" alt="logo"  id="logo">
-                    </a>
-                </div>
-                <div class="col-1">
-                    <button type="button" class="btn btn-outline-secondary" id="btn">Contacto</button>
-                </div>      
-            </div>
+<body>  
+  <div class="warpHeader">
+    <div class="container" id="header">
+      <div class="row">
+        <div class="col">
+          <a href="index.html">
+            <img src="assest/galery/Ilogo.png" alt="logo"  id="logo">
+          </a>
         </div>
-        <div class="contianer" id="identidad">
-            <h1>Programador y diseñador gráfico</h1>
-            <img src="assest/galery/avatar.png" alt="avatar" id="avatar"> 
-            <img src="assest/galery/pcs.png" alt="avatar" id="pc">
-        </div>
+        <div class="col-1">
+          <button type="button" class="btn btn-outline-secondary" id="btn"><a href="#contacto">Contacto</a> </button>
+        </div>      
+      </div>
+    </div>
+  </div>
+      <div class="contianer" id="identidad">
+        <h1>Programador y diseñador gráfico</h1>
+          <img src="assest/galery/avatar.png" alt="avatar" id="avatar"> 
+          <img src="assest/galery/pcs.png" alt="avatar" id="pc">
+    </div>
+  
+        
     
     <div id="txtPerfil">
         <p class="multipleStrings"></p>
     </div>
-    <div class="wapper">
-        <div class="card">
-            <img src="assest/galery/front.jpg" alt="front"  class="imagen" id="imf">
-            <div class="info">
-            <h1>Ids</h1>
-            <ul>
-                <li>Visual Studio Code</li>
-                <li>Android Studio</li>
-            </ul>
-            <h1>Lenguajes</h1>
-            <ul>
-                <li>Html5</li>
-                <li>JavaScript</li>
-            </ul>
-            </div> 
-        </div>
-        <div class="card">
-            <img src="assest/galery/back.jpg" alt="back" class="imagen"id="imb">
-            <div class="info">
-                <h1>Lenguaje</h1>
-            <p>Java</p>
-            <p>Ids</p>
-            <ul>
-                <li>Visual Studio code</li>
-                <li>Android Studio</li>
-                <li>Eclipse</li>
-            </ul>
+    <div class="container " id="cards">
+        <div class="wapper">
+            <div class="card">
+                <img src="assest/galery/front.jpg" alt="front"  class="imagen" id="imf">
+                <div class="info">
+                <h6>Ids</h6>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Android Studio</li>
+                </ul>
+                <h6>Lenguajes</h6>
+                <ul>
+                    <li>Html5</li>
+                    <li>JavaScript</li>
+                </ul>
+                </div> 
+            </img>
             </div>
-        </div>
-        <div class="card">
-            <img src="assest/galery/design-Es.jpg" alt="diseño" class="imagen" id="imd">
-            <div class="info">
-                <h1>Programas</h1>
-            <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Indesign</li>
-            </ul>
+            <div class="card">
+                <img src="assest/galery/back.jpg" alt="back" class="imagen"id="imb">
+                <div class="info">
+                  <h6>Lenguaje</h6>
+                    <p>Java</p>
+                  <h6>Ids</h6>
+                    <ul>
+                        <li>Visual Studio code</li>
+                        <li>Android Studio</li>
+                        <li>Eclipse</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assest/galery/design-Es.jpg" alt="diseño" class="imagen" id="imd">
+                <div class="info">
+                    <h6>Programas</h6>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Indesign</li>
+                </ul>
+                </div>
             </div>
         </div>
     </div>
+  
+    <div class="container" id="publis">
+      <h2>Proyectos Personales</h2>
+        <div class="publicaciones">
+            <div class="card">
+                <img src="assest/galery/pokedex.png" class="card-img-top fotoCard" alt="pokedex">
+                <div class="card-body">
+                  <h5 class="card-title">Pokedex</h5>
+                  <p class="card-text">Proyecto con con una API de javaScript, la cual nos permite realizar busqueda por el nombre del pokemon y nos muestra su dibujo y sus estadísticas</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assest/galery/formulario.PNG" class="card-img-top fotoCard" alt="formulario">
+                <div class="card-body">
+                  <h5 class="card-title">Formulario</h5>
+                  <p class="card-text">Diseño de formulario</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assest/galery/coinbase.PNG" class="card-img-top  fotoCard" alt="coinbase">
+                <div class="card-body">
+                  <h5 class="card-title">Web Coinbase</h5>
+                  <p class="card-text">Web de cryptomonedas realizada con html,css y sass</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+        
+    </div>
     
+  
+    <div class="container" id="footer">
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+              <!-- Left -->
+              <div class="me-5 d-none d-lg-block">
+                <span>Encuentrame en las siguientes redes sociales:</span>
+              </div>
+              <!-- Left -->
+          
+              <!-- Right -->
+              <div>
+                <a href="https://twitter.com/JavierDev_" class="me-4 text-reset" target="_blank">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://github.com/xavimagine" class="me-4 text-reset" target="_blank">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/javier-d%C3%ADaz-rayo/" class="me-4 text-reset" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.behance.net/xavimagine" class="me-4 text-reset" target="_blank">
+                  <i class="bi bi-behance"></i>
+                </a>
+              </div>
+            </section>
     
+          
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <img src="assest/galery/Ilogo.png" alt="logo" id="logoFoot"></img>Javier Díaz Rayo
+                    </h6>
+                   
+                    <p>
+                      Programador y diseñador gráfico español de 31 años
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Products
+                    </h6>
+                    <p>
+                      <a href="#!" class="text-reset">Angular</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">React</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Vue</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Laravel</a>
+                    </p>
+                  </div>
+                 
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Useful links
+                    </h6>
+                    <p>
+                      <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Help</a>
+                    </p>
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4" id="contacto">Contacto</h6>
+                    <p><i class="bi bi-geo-alt-fill me-3"></i>Madrid, España</p>
+                    <p>
+                      <i class="bi bi-envelope me-3"></i>
+                      sr.xavier5@gmail.com
+                    </p>
+                    <p><i class="bi bi-phone me-3"></i> +34 606036762</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+              </div>
+            </section>
+          
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2021 Copyright:
+              <a class="text-reset fw-bold" >Jdr.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+    </div>
     
 
     

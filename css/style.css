@@ -1,24 +1,30 @@
 :root {
   --blanco:white;
-  --color-cards-tecno: #7b797e75;
+  --color-cards-tecno: #7b797ee1;
   --negro:black;
   --gris-perfil: #c2c2c2ce;
   --gris:grey;
 }
 
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: #fcfbf3;
+}
+
 .warpHeader {
   background-color: var(--color-cards-tecno);
   width: 100vw;
-  padding-top: 1px;
-  padding-bottom: 9px;
-}
-.warpHeader #header {
-  margin-top: 0.39rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  font-weight: 500;
 }
 .warpHeader #header #logo {
-  width: 2.5rem;
+  width: 1.8rem;
+  margin-right: 0.5rem;
 }
 .warpHeader #header #btn {
+  height: 1.8rem;
+  font-size: x-small;
   color: var(--gris);
   background-color: var(--blanco);
 }
@@ -45,7 +51,7 @@
   flex-direction: column;
   align-items: center;
 }
-#identidad h1 {
+#identidad h4 {
   margin-top: 2rem;
 }
 #identidad #avatar {
@@ -68,6 +74,7 @@
   width: 100vw;
   height: 25rem;
   margin-bottom: -8rem;
+  font-weight: 500;
 }
 
 .txtTitulo {
@@ -123,6 +130,9 @@
   transition: 0.5s;
   opacity: 0;
 }
+#cards .card .icons {
+  width: 1.3rem;
+}
 #cards .imagen {
   width: 90%;
   object-fit: cover;
@@ -132,7 +142,7 @@
 #cards .info {
   position: relative;
   z-index: 3;
-  color: var(--negro);
+  color: var(--blanco);
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s;
@@ -160,15 +170,21 @@
 
 #publis {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+#publis h2 {
+  margin-bottom: 5rem;
 }
 #publis .publicaciones {
   margin-right: 1rem;
   display: flex;
   justify-content: space-around;
 }
-#publis .card {
+#publis .publicaciones .card {
   width: 20rem;
-  height: 26rem;
+  margin: 1rem;
 }
 #publis .fotoCard {
   width: 20rem;
@@ -176,6 +192,15 @@
 
 #footer a {
   text-decoration: none;
+}
+#footer .fooText {
+  font-size: 12px;
+}
+#footer .fooText .mt-5 {
+  margin-top: 2rem !important;
+}
+#footer .copy {
+  padding-top: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

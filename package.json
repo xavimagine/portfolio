@@ -2,5 +2,25 @@
   "dependencies": {
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prueba":"node js/actualizador.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavimagine/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xavimagine/portfolio/issues"
+  },
+  "homepage": "https://github.com/xavimagine/portfolio#readme",
+  "description": ""
 }

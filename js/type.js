@@ -6,5 +6,10 @@ const year =  hoy-yearC
 new TypeIt(".multipleStrings", {
     strings: ["Hola,bienvenido", `Me llamao Javier díaz rayo, tengo ${year} años y soy programador y diseñador gráfico`],
     speed: 50,
-    waitUntilVisible: true,
+    waitUntilVisible: false,
   }).go();
+
+  
+
+  
+  

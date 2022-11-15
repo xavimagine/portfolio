@@ -36,11 +36,8 @@
           <img src="assest/galery/avatar.png" alt="avatar" id="avatar"> 
           <img src="assest/galery/pcs.png" alt="avatar" id="pc">
     </div>
-  
-        
-    
-    <div id="txtPerfil">
-        <p class="multipleStrings"></p>
+    <div id="txtPerfil" >
+        <p class="multipleStrings  container"></p>
     </div>
     <div class="container " id="cards">
         <div class="wapper">
@@ -91,39 +88,68 @@
             </div>
         </div>
     </div>
-  
     <div class="container" id="publis">
-      <h2>Proyectos Personales</h2>
-        <div class="publicaciones">
-            <div class="card">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Proyectos Personales</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control " id="floatingInput" placeholder="Buscar" onkeyup="filtrar()">
+              <label for="floatingInput">
+                <i class="bi bi-search"></i>
+                <span>Buscar</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <div class="cards publicaciones">
+            <div class="card publicacion">´
                 <img src="assest/galery/pokedex.png" class="card-img-top fotoCard" alt="pokedex">
                 <div class="card-body">
                   <h5 class="card-title">Pokedex</h5>
                   <p class="card-text">Proyecto con con una API de javaScript, la cual nos permite realizar busqueda por el nombre del pokemon y nos muestra su dibujo y sus estadísticas</p>
+                  <div class="labels">
+                    <span class="badge rounded-pill etiqueta" id="html">Html5</span>
+                    <span class="badge rounded-pill etiqueta" id="css">Css</span>
+                    <span class="badge rounded-pill etiqueta" id="js">JavaScript</span>
+                  </div>
                   <a href="https://xavimagine.github.io/Pokedex/" class="btn btn-primary">Abrir proyecto</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card publicacion">
                 <img src="assest/galery/formulario.PNG" class="card-img-top fotoCard" alt="formulario">
                 <div class="card-body">
                   <h5 class="card-title">Formulario</h5>
                   <p class="card-text">Diseño de formulario</p>
+                  <div class="labels">
+                    <span class="badge rounded-pill etiqueta" id="html">Html5</span>
+                    <span class="badge rounded-pill etiqueta" id="css">Css</span>
+                  </div>
                   <a href="https://xavimagine.github.io/formulario/" target="_blank" class="btn btn-primary">Abrir proyecto</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card publicacion">
                 <img src="assest/galery/coinbase.PNG" class="card-img-top  fotoCard" alt="coinbase">
                 <div class="card-body">
                   <h5 class="card-title">Web Coinbase</h5>
                   <p class="card-text">Web de cryptomonedas realizada con html,css y sass</p>
+                  <div class="labels">
+                    <span class="badge rounded-pill etiqueta" id="html">Html5</span>
+                    <span class="badge rounded-pill etiqueta" id="css">Css</span>
+
+                  </div>
                   <a href="https://xavimagine.github.io/Web-html-css-sass-y-bootstrap/" target="_blank" class="btn btn-primary">Abrir proyecto</a>
                 </div>
               </div>
             </div>
         
     </div>
-    
-  
     <div class="container" id="footer">
         <footer class="text-center text-lg-start bg-light text-muted">
             <!-- Section: Social media -->
@@ -135,7 +161,7 @@
               <!-- Left -->
           
               <!-- Right -->
-              <div>
+              <div id="rss">
                 <a href="https://twitter.com/JavierDev_" class="me-4 text-reset" target="_blank">
                   <i class="bi bi-twitter"></i>
                 </a>
@@ -186,7 +212,8 @@
 
     
 </body>
-<script  language="JavaScript" type="text/javascript" src="js/type.js"></script>
-<script language="JavaScript" type="text/javascript" src="js/actualizador.js"></script>
+<script src="js/type.js"></script>
+<script type="module" src="js/actualizador.js"></script>
+<script src="js/searchCards.js"></script>
 
 </html>

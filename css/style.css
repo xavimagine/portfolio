@@ -4,6 +4,9 @@
   --negro:black;
   --gris-perfil: #c2c2c2ce;
   --gris:grey;
+  --azul--css:#32AADF;
+  --naranja--hmtl:#F4692D;
+  --amarillo--js:#FCDC36;
 }
 
 body {
@@ -63,10 +66,10 @@ body {
 }
 
 .multipleStrings {
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
   color: var(--blanco);
-  padding-top: 10rem;
+  padding-top: 4.5rem;
 }
 
 #txtPerfil {
@@ -179,19 +182,48 @@ body {
 }
 #publis .publicaciones {
   margin-right: 1rem;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  width: 69rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 #publis .publicaciones .card {
   width: 20rem;
   margin: 1rem;
+  transition: all 0.3s ease-out;
+}
+#publis .publicaciones .card img {
+  border: 0px 0px 1px 0px solid var(--gris);
+}
+#publis .publicaciones .card .filtro {
+  display: none;
+}
+#publis .publicaciones .card .labels {
+  margin-bottom: 1.5rem;
+}
+#publis .publicaciones .card .labels #html {
+  background-color: var(--naranja--hmtl);
+  color: var(--negro);
+  font-weight: 500;
+}
+#publis .publicaciones .card .labels #css {
+  background-color: var(--azul--css);
+  color: var(--negro);
+  font-weight: 500;
+}
+#publis .publicaciones .card .labels #js {
+  background-color: var(--amarillo--js);
+  color: var(--negro);
+  font-weight: 500;
 }
 #publis .fotoCard {
   width: 20rem;
 }
 
-#footer a {
+#footer #rss a {
   text-decoration: none;
+}
+#footer #rss a i:hover {
+  color: var(--negro);
 }
 #footer .fooText {
   font-size: 12px;

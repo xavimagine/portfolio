@@ -4,7 +4,15 @@
     --negro:black;
     --gris-perfil: #c2c2c2ce;
     --gris:grey;
+    --azul--css:#32AADF;
+    --naranja--hmtl:#F4692D;
+    --amarillo--js:#FCDC36;
 }
+@mixin etiqueta {
+    color: var(--negro);
+    font-weight: 500;
+}
+
 body{
     font-family: 'Roboto Slab', serif;
     background-color: #fcfbf3;
@@ -65,10 +73,10 @@ body{
     }
 }
 .multipleStrings{
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
     color: var(--blanco);
-    padding-top: 10rem;
+    padding-top: 4.5rem;
 }
 
 
@@ -175,16 +183,43 @@ body{
     h2{
         margin-bottom: 5rem;
     }
-   .publicaciones{
-    margin-right: 1rem;
-    display: flex;
-    justify-content: space-around;
+    .publicaciones{
+        margin-right: 1rem;
+        display: grid;
+        width: 69rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        // display: flex;
+        // justify-content: space-around;
         .card{
-            width: 20rem;
-            margin: 1rem;
+                width: 20rem;
+                margin: 1rem;
+                transition: all 0.3s ease-out;
+                img{
+                    border: 0px 0px 1px 0px solid var(--gris);
+                }
+      
+            .filtro{
+                display: none;
             }
-    }
-  
+
+            .labels{
+                margin-bottom: 1.5rem;
+                #html{
+                    background-color: var(--naranja--hmtl);
+                    @include etiqueta()
+                }
+                #css{
+                    background-color: var(--azul--css);
+                    @include etiqueta()
+                }
+                #js{
+                    background-color: var(--amarillo--js);
+                    @include etiqueta()
+                }
+            }
+                
+        }
+    }  
     .fotoCard{
         width: 20rem;
     }
@@ -192,10 +227,19 @@ body{
 
 
 #footer{
- 
+  #rss{
     a{
         text-decoration: none;
+        i{
+            &:hover{
+                color: var(--negro);
+                }
+        }
+       
     }
+   
+  }
+   
     .fooText{
         // height: 63px;
         font-size: 12px;

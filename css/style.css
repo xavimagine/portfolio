@@ -12,6 +12,7 @@
 body {
   font-family: "Roboto Slab", serif;
   background-color: #fcfbf3;
+  overflow-x: hidden;
 }
 
 .warpHeader {
@@ -25,28 +26,16 @@ body {
   width: 1.8rem;
   margin-right: 0.5rem;
 }
-.warpHeader #header #btn {
-  height: 1.8rem;
-  font-size: x-small;
+.warpHeader #header #nombreHeader {
+  font-size: 21px;
+}
+.warpHeader #header .contBtn {
   color: var(--gris);
   background-color: var(--blanco);
 }
-.warpHeader #header #btn:hover {
+.warpHeader #header .contBtn:hover {
   background-color: var(--color-cards-tecno);
   color: var(--blanco);
-}
-.warpHeader #header #btn:hover a:visited {
-  color: var(--blanco);
-}
-.warpHeader #header a {
-  color: var(--gris);
-  text-decoration: none;
-}
-.warpHeader #header a:visited {
-  color: var(--gris);
-}
-.warpHeader #header a:link {
-  color: var(--gris);
 }
 
 #identidad {
@@ -219,6 +208,22 @@ body {
   width: 20rem;
 }
 
+#lenguaje #html {
+  background-color: var(--naranja--hmtl);
+  color: var(--negro);
+  font-weight: 500;
+}
+#lenguaje #css {
+  background-color: var(--azul--css);
+  color: var(--negro);
+  font-weight: 500;
+}
+#lenguaje #js {
+  background-color: var(--amarillo--js);
+  color: var(--negro);
+  font-weight: 500;
+}
+
 #footer #rss a {
   text-decoration: none;
 }
@@ -233,6 +238,34 @@ body {
 }
 #footer .copy {
   padding-top: 0.5rem;
+}
+
+.offcanvas {
+  background-color: var(--gris);
+  color: var(--blanco);
+}
+
+.offcanvas-header {
+  margin-left: 2rem;
+}
+
+.offcanvas-body {
+  font-size: 20px;
+  margin-left: 2rem;
+}
+.offcanvas-body #canvaRss {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.offcanvas-body #canvaRss a {
+  text-decoration: none;
+}
+.offcanvas-body #canvaRss .bi {
+  font-size: 1.5rem;
+}
+.offcanvas-body #canvaRss i {
+  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

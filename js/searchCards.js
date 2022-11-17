@@ -11,22 +11,5 @@ function filtrar() {
             cards[i].style.display= "none"
         }
     
-  }
-        
-} 
-//   document.addEventListener("keyup", function(event) {
-
-//     // if (event.target.matches("#floatingInput")){
-
-//     //     if (event.key ==="Escape")event.target.value = ""
-//     //     document.querySelectorAll('.card-body h5.card-title').forEach( publi => {
-        
-//     //     publi.textContent.toLowerCase().includes(event.target.value.toLowerCase())
-//     //         ?publi.classList.remove('filtro')
-//     //         :publi.classList.add('filtro')
-//     //     })
-//     //   }
-// });
-
-
-
+  }     
+}

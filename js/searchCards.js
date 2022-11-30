@@ -4,12 +4,10 @@ function filtrar() {
     
   for (let i = 0; i < cards.length; i++) {
     const title = cards[i].querySelector(".card-body h5.card-title")
-
         if(title.innerText.toLowerCase().indexOf (input) > -1){
-            cards[i].style.display= ""
+          cards[i].classList.remove('filtro')
         }else{
-            cards[i].style.display= "none"
+          cards[i].classList.add('filtro')
         }
-    
   }     
 }

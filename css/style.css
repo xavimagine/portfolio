@@ -37,6 +37,17 @@ body {
   background-color: var(--color-cards-tecno);
   color: var(--blanco);
 }
+.warpHeader #header .dropdown #btnIdioma {
+  color: var(--gris);
+  background-color: var(--blanco);
+}
+.warpHeader #header .dropdown #btnIdioma:hover {
+  background-color: var(--color-cards-tecno);
+  color: var(--blanco);
+}
+.warpHeader #header .dropdown .svgIdioma {
+  width: 1.4rem;
+}
 
 #identidad {
   display: flex;

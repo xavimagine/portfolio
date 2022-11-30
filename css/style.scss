@@ -44,6 +44,21 @@ body{
                 color: var(--blanco);
             }
         }
+        .dropdown{
+            #btnIdioma{
+                color: var(--gris);
+                background-color: var(--blanco);
+                &:hover{
+                    background-color: var(--color-cards-tecno);
+                    color: var(--blanco);
+                }
+            }
+            .svgIdioma{
+                width: 1.4rem;
+            }
+        }
+       
+        
 
     }
 }
